@@ -1,0 +1,34 @@
+*{
+    padding: 0;margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+html,body,#app{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    /* 750设计图中 1rem = 100px */
+    font-size: -webkit-calc(100vw/7.5);
+}
+
+body{
+    font-size: 0.24rem;
+}
+/* #app{
+    display: flex;
+    flex-direction: column;
+} */

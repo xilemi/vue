@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "eslint": "^8.42.0",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.4.2"
+  }
+}
