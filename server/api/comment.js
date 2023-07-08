@@ -17,7 +17,7 @@ router.get("/list", (req, res, next) => {
     })
 })
 
-// 添加  传入   title content  iseidt  time  
+// 添加  传入   title content    time  
 
 router.post("/add", (req, res, next) => {
     let insertData = req.body
@@ -43,7 +43,7 @@ router.get("/delete", (req, res, next) => {
 // 修改   传入 commentid title content
 router.post("/updata", (req, res, next) => {
     const { commentid, title, content } = req.body
-    mysql.update(Comment, { commentid }, { $set: { title: title, content: content } }).then(data => {
+    mysql.update(Comment, { commentid }, { $set: {  content: content } }).then(data => {
         res.send({
             code: 200,
             message: "更新成功"
